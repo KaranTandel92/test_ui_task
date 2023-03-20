@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- <span class="fa fa-search"></span> -->
+
+    <div class="wrapper d-flex">
+        <input type="checkbox" id="toggle">
+        <!-- start : sidebar -->
+        <aside class="sidebar d-flex flex-column">
+            <section class="logo d-flex align-center">
+                <div class="logo-icon"><span></span></div>
+                <h4 class="logo-name">Dashboard Kit</h4>
+            </section>
+            <section class="list-name">
+                <ul>
+                    <div class="list-top-section">
+                        <li class="list"><span class="fa fa-circle-o-notch list-icon sidebar-icon"></span> <a href="#"
+                                class="list-heading">Overview</a>
+                        </li>
+                        <li class="list"><span class="fa fa-ticket list-icon sidebar-icon"></span><a href="#"
+                                class="list-heading">Tickets</li></a>
+                        <li class="list"><span class="fa fa-lightbulb-o list-icon sidebar-icon"></span><a href="#"
+                                class="list-heading">Ideas</li>
+                        </a>
+                        <li class="list"><span class="fa fa-id-badge list-icon sidebar-icon"></span><a href="#"
+                                class="list-heading">Contacts</li></a>
+                        <li class="list"><span class="fa fa-gavel list-icon sidebar-icon"></span><a href="#"
+                                class="list-heading">Agents</li></a>
+                        <li class="list"><span class="fa fa-cart-arrow-down list-icon sidebar-icon"></span><a href="#"
+                                class="list-heading">Articles</li>
+                        </a>
+                    </div>
+                    <div class="list-bottom-section">
+                        <li class="list"><span class="fa fa-street-view list-icon sidebar-icon"></span><a href="#"
+                                class="list-heading">Settings</a></li>
+                        <li class="list"><span class="fa fa-subscript list-icon sidebar-icon"></span><a href="#"
+                                class="list-heading">Subscription</a>
+                        </li>
+                    </div>
+                </ul>
+            </section>
+        </aside>
+        <!-- end : sidebar -->
+        <div class="container d-flex flex-column flex-1">
+            <!-- start : heading -->
+            <header class="heading d-flex">
+                <div class="d-flex align-center">
+                    <label for="toggle" class="fa fa-bars"></label>
+                    <h2 class="heading-name">Tickets</h2>
+                </div>
+                <div class="heading-menu d-flex align-center">
+                    <span class="fa fa-search"></span>
+                    <span class="fa fa-bell"></span>
+                    <div class="d-flex align-center human-sign">
+                        <span class="human-name">Cindrella stallone</span>
+                        <img src="./assets/images/andrey.png" alt="human-image" class="human-icon">
+                    </div>
+                </div>
+            </header>
+            <!-- end : heading -->
+            <main class="data-section d-flex flex-column">
+                <!-- heading section of table-->
+                <div class="table-main-heaing d-flex">
+                    <h3>All tickets</h3>
+                    <div>
+                        <div class="fa fa-sort-amount-desc"><span class="data-filter">Sort</span></div>
+                        <div class="fa fa-filter"><span class="data-filter">Filter</span></div>
+                    </div>
+                </div>
+                <!-- start: table -->
+                <div class="table-section">
+                    <table class="table">
+                        <!-- start : table heading -->
+                        <thead class="table-heading-data">
+                            <tr class="table-row table-heading-row">
+                                <th class="table-heading">Ticket details</th>
+                                <th class="table-heading">Customer name</th>
+                                <th class="table-heading">Date</th>
+                                <th class="table-heading">Priority</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <!-- end: table heading -->
+                        <!-- start : table body -->
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/karan.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Karan Tandel</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge">HIGH</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/andrey.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Shreya Goshal</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge low-proiority">LOW</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/andrey.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Shreya Goshal</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge normal-proiority">NORMAL</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/karan.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Karan Tandel</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge">HIGH</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/karan.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Karan Tandel</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge normal-proiority">NORMAL</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/andrey.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Shreya Goshal</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge low-proiority">LOW</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/karan.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Karan Tandel</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge normal-proiority">NORMAL</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/andrey.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Shreya Goshal</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge low-proiority">LOW</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/karan.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Karan Tandel</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge normal-proiority">NORMAL</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/andrey.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Shreya Goshal</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge low-proiority">LOW</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/karan.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Karan Tandel</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge normal-proiority">NORMAL</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v  d-flex"></span></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="table-data">
+                                    <div class="d-flex align-center">
+                                        <div><img src="./assets/images/andrey.png" alt="human-image" class="human-icon">
+                                        </div>
+                                        <div class="table-data d-flex flex-column">
+                                            <span class="description">Contact E-mail not linked</span>
+                                            <span class="status">updated one day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class=" d-flex flex-column">
+                                        <span class="description">Shreya Goshal</span>
+                                        <span class="status">on 24.05.2019</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <div class="d-flex flex-column">
+                                        <span class="description">May 26,2019</span>
+                                        <span class="status">6:30 PM</span>
+                                    </div>
+                                </td>
+                                <td class="table-data">
+                                    <span class="priority-bedge low-proiority">LOW</span>
+                                </td>
+                                <td><span class="fa fa-ellipsis-v d-flex"></span></td>
+                            </tr>
+                        </tbody>
+                        <!-- end : table body -->
+                    </table>
+                    <!-- start : table footer -->
+                    <div class="footer d-flex">
+                        <div class="table-footer">Row per page : 3 <span class="fa fa-chevron-down"></span></div>
+                        <div class="table-footer">1-6 of 320 <span class="fa fa-chevron-left"></span><span
+                                class="fa fa-chevron-right"></span></div>
+                        </tr>
+                    </div>
+                    <!-- end : table footer -->
+                </div>
+            </main>
+            <!-- end : table -->
+        </div>
+    </div>
+</body>
+
+</html>
