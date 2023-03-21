@@ -31,6 +31,7 @@ body {
 .fa {
     color: #c5c7cd;
     cursor: pointer;
+    width: 25px;
 }
 
 .sidebar {
@@ -43,7 +44,7 @@ body {
 #toggle:checked+.sidebar {
     transform: translateX(-280px);
     width: 0;
-    flex: 0 0 0;
+    flex: 0;
 }
 
 #toggle {
@@ -55,7 +56,7 @@ body {
 }
 
 .logo-icon {
-    background-color: blue;
+    background-color: #3559fa;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -108,7 +109,6 @@ body {
 /* start : main body */
 .container {
     background-color: #f7f8fc;
-    /* padding: 30px 30px; */
     overflow: hidden;
 }
 
@@ -132,13 +132,13 @@ body {
     background-color: darkblue;
     border-radius: 50%;
     top: 0px;
-    right: 0px;
+    right: 10px;
     border: 1px solid white
 }
 
 .heading {
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 30px;
 }
 
 .human-name {
@@ -185,10 +185,11 @@ body {
     justify-content: space-between;
     padding-bottom: 30px;
     margin: 20px;
+    padding-right: 20px;
 }
 
 .table-heading {
-    color: #a9abbb;
+    color: #a5a7b8;
     font-size: 14px;
     padding-bottom: 8px;
     text-align: left;
@@ -257,6 +258,10 @@ body {
     color: #6b7086;
 }
 
+.fa-filter {
+    margin-left: 20px;
+}
+
 .fa-sort-amount-desc {
     margin-right: 20px;
 }
@@ -286,6 +291,11 @@ body {
 }
 
 .fa-ellipsis-v {
+    margin-right: 20px;
+}
+
+.page-number {
+    border: 0;
     margin-right: 20px;
 }
 
