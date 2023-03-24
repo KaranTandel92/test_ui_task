@@ -25,6 +25,7 @@ body {
     height: 100%;
     overflow: hidden;
     flex-grow: 1;
+    background-color: #363740;
 }
 
 /* start : sidebar */
@@ -93,6 +94,7 @@ body {
 
 .fa-bars {
     margin: 0 5px;
+    color: #0000;
 }
 
 .list-icon {
@@ -161,11 +163,17 @@ body {
     width: 40px;
     border-radius: 50%;
     margin-left: 10px;
-    border: 2px solid #FFFF;
+    border: 3px solid #FFFF;
 }
 
 .human-sign {
     border-left: 0.3px solid lightgrey;
+}
+
+.icon-image {
+    border: 1px solid black;
+    border-radius: 50%;
+
 }
 
 .data-section {
