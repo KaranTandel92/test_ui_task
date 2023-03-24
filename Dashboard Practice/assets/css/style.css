@@ -6,6 +6,7 @@ body {
 
 body {
     overflow: hidden;
+    font-family: 'Roboto';
 }
 
 /* universal class */
@@ -15,7 +16,6 @@ body {
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto';
     list-style: none;
 }
 
@@ -61,6 +61,18 @@ body {
     width: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    position: relative;
+}
+
+.logo-icon::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #FFFF;
+    border-radius: 0 50% 50% 0;
+    top: 12px;
+    left: 13px;
 }
 
 .logo-name {
@@ -116,12 +128,9 @@ body {
     margin-left: 10px;
 }
 
-.heading-menu {
-    margin-right: 30px;
-}
-
 .fa-bell {
     position: relative;
+    margin: 0 20px;
 }
 
 .fa-bell::after {
@@ -138,7 +147,7 @@ body {
 
 .heading {
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 40px 30px;
 }
 
 .human-name {
@@ -152,18 +161,11 @@ body {
     width: 40px;
     border-radius: 50%;
     margin-left: 10px;
+    border: 2px solid #FFFF;
 }
 
 .human-sign {
     border-left: 0.3px solid lightgrey;
-}
-
-.fa-bell {
-    margin: 0 20px;
-}
-
-.fa-bell ::after {
-    content: 0;
 }
 
 .data-section {
@@ -176,9 +178,7 @@ body {
 
 .table-section {
     overflow: auto;
-    flex-grow: 1;
     position: relative;
-    padding-bottom: 20px;
 }
 
 .table-main-heaing {
@@ -252,34 +252,31 @@ body {
 }
 
 .data-filter {
+    color: #595e77;
     margin-left: 8px;
     font-size: 13px;
     font-weight: 600;
-    color: #6b7086;
 }
 
 .fa-filter {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
-.fa-sort-amount-desc {
-    margin-right: 20px;
-}
-
-.footer {
-    justify-content: flex-end;
-    padding-right: 30px;
-    top: 0;
+.footer-row {
+    bottom: 0;
     position: sticky;
     background-color: white;
+    padding: 15px;
 }
 
 .table-footer {
-    color: #b4b6c3;
-    padding-top: 20px;
     font-size: 13px;
-    font-weight: 500;
-    text-align: right;
+    font-weight: 600;
+    color: #6e7489;
+}
+
+.footer-value {
+    justify-content: flex-end;
 }
 
 .fa-chevron-down {
@@ -297,6 +294,7 @@ body {
 .page-number {
     border: 0;
     margin-right: 20px;
+    color: #6e7489;
 }
 
 /* end : main body */

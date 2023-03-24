@@ -26,7 +26,7 @@
                 <div class="logo-icon"><span></span></div>
                 <h4 class="logo-name">Dashboard Kit</h4>
             </section>
-            <section class="list-name">
+            <section>
                 <ul>
                     <div class="list-top-section">
                         <li class="list"><span class="fa fa-circle-o-notch list-icon sidebar-icon"></span><a href="#"
@@ -77,7 +77,7 @@
                 <!-- heading section of table-->
                 <div class="table-main-heaing d-flex">
                     <h3>All tickets</h3>
-                    <div class="filter-section">
+                    <div class="filter-section d-flex">
                         <div class="fa fa-sort-amount-desc"><span class="data-filter">Sort</span></div>
                         <div class="fa fa-filter"><span class="data-filter">Filter</span></div>
                     </div>
@@ -96,8 +96,9 @@
                             </tr>
                         </thead>
                         <!-- end: table heading -->
+
                         <!-- start : table body -->
-                        <tbody>
+                        <tbody class="customer-info">
                             <tr class="table-row">
                                 <td class="table-data">
                                     <div class="d-flex align-center">
@@ -434,11 +435,14 @@
                                 </td>
                                 <td><span class="fa fa-ellipsis-v d-flex"></span></td>
                             </tr>
+
                         </tbody>
                         <!-- end : table body -->
                     </table>
-                    <!-- start : table footer -->
-                    <div class="footer d-flex">
+                </div>
+                <!-- start : table footer -->
+                <div class="footer-row">
+                    <div class="footer-value d-flex align-center">
                         <div class="table-footer">Row per page :
                             <select class="page-number">
                                 <option value="one">1</option>
@@ -453,12 +457,13 @@
                                 <option value="ten">10</option>
                             </select>
                         </div>
-                        <div class="table-footer">1-6 of 320 <span class="fa fa-chevron-left"></span><span
-                                class="fa fa-chevron-right"></span></div>
-                        </tr>
+                        <div class="table-footer">1-6 of 320
+                            <span class="fa fa-chevron-left"></span>
+                            <span class="fa fa-chevron-right"></span>
+                        </div>
                     </div>
-                    <!-- end : table footer -->
                 </div>
+                <!-- end : table footer -->
             </main>
             <!-- end : table -->
         </div>
